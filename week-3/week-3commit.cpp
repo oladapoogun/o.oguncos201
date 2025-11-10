@@ -14,6 +14,11 @@ int main() {
 
     cout << "Are you a PAU student? (1 = Yes, 0 = No): ";
     cin >> isPAU;
+    if (isPAU ==0  ){
+        cout << "Sorry, this offer is only for PAU students.\n";
+        return 0;
+    }
+    
 
     cout << "\nCourses:\n";
     cout << "1. Photography (3 days, NGN 10000)\n";
@@ -37,12 +42,12 @@ int main() {
     cout << "3. Camp House C (NGN 8000 per day)\n";
     cout << "4. Camp House D (NGN 13000 per day)\n";
     cout << "5. Camp House E (NGN 5000 per day)\n";
-    cout << "Enter your location number: ";
+    cout << "Enter your location number: "; 
     cin >> location;
 
     if (location == 1) { locName = "Camp House A"; lodgeFee = 10000; }
     else if (location == 2) { locName = "Camp House B"; lodgeFee = 2500; }
-    else if (location == 3) { locName = "Camp House C"; lodgeFee = 8000; }
+    else if (location == 3) { locName = "Camp House C"; lodgeFee = 5000; }
     else if (location == 4) { locName = "Camp House D"; lodgeFee = 13000; }
     else if (location == 5) { locName = "Camp House E"; lodgeFee = 5000; }
     else { cout << "Invalid location number"; return 0; }
